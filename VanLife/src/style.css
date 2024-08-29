@@ -5,6 +5,7 @@
   --textLight: #ffffff;
   --textDark: #161616;
   --accentDark: #000000;
+  --accentPrimary: #d36c22;
   --btnOrange: #e17654;
   --btnGreen: #115e59;
   --selection: #ffcc8d;
@@ -24,17 +25,15 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   background: var(--bg);
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-#root {
+.container {
   margin: auto;
-  width: 75%;
+  width: 70%;
 }
 
 a {
