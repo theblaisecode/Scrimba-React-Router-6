@@ -9,12 +9,15 @@ function App() {
     <BrowserRouter>
       <nav>
         <div id="logo">
-          <Link to="/" aria-label="Link to Home Page">
+          <Link
+            to="/"
+            aria-label="Link to Home Page"
+            style={{ border: "none" }}>
             <img src={logo} alt="VanLife logo" />
           </Link>
         </div>
 
-        <div className="pages">
+        <div className="pageNav">
           <Link to="/about">About</Link>
           <Link to="/vans">Vans</Link>
         </div>

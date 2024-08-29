@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -27,9 +28,52 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--bg);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 #root {
   margin: auto;
-  width: 85%;
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textDark);
+  font-weight: 500;
+  border-bottom: 0.1rem solid transparent;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--accentDark);
+  /* font-weight: 00; */
+  border-bottom: 0.1rem solid var(--accentDark);
+  transition: all 0.4s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+#logo {
+  width: 10%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+.pageNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pageNav a {
+  padding: 0.5rem;
 }
