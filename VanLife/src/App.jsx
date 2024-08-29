@@ -1,23 +1,31 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Vans from "./Pages/Vans/Vans";
-import logo from "./img/"
+import logo from "./img/logo.png";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <nav>
+        <div id="logo">
+          <Link to="/" aria-label="Link to Home Page">
+            <img src={logo} alt="VanLife logo" />
+          </Link>
+        </div>
 
+        <div className="pages">
+          <Link to="/about">About</Link>
+          <Link to="/vans">Vans</Link>
+        </div>
       </nav>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/vans" element={<Vans />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/vans" element={<Vans />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
