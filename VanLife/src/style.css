@@ -1,0 +1,32 @@
+:root {
+  --bg: #fff7ed;
+  --primary: #ff8c38;
+  --accent: #ffcc8d;
+  --btnOrange: #e17654;
+  --selection: #ffcc8d;
+  --btnGreen: #115e59;
+  --textLight: #ffffff;
+  --textDark: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5% /* 1rem = 10px */;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+
+#root {
+  margin: auto;
+  width: 85%;
+}
