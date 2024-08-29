@@ -2,11 +2,14 @@
   --bg: #fff7ed;
   --primary: #ff8c38;
   --accent: #ffcc8d;
-  --btnOrange: #e17654;
-  --selection: #ffcc8d;
-  --btnGreen: #115e59;
   --textLight: #ffffff;
-  --textDark: #000000;
+  --textDark: #161616;
+  --accentDark: #000000;
+  --btnOrange: #e17654;
+  --btnGreen: #115e59;
+  --selection: #ffcc8d;
+  --footer: #252525;
+  --footerText: #aaaaaa;
 }
 
 * {
