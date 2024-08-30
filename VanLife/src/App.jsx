@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Vans from "./pages/Vans/Vans";
 import logo from "./img/logo.png";
+import "./server";
 
 function App() {
   return (
