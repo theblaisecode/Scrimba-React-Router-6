@@ -8,7 +8,7 @@
   --accentPrimary: #d36c22;
   --btnOrange: #e17654;
   --btnGreen: #115e59;
-  --selection: #ffcc8d;
+  --selection: #FFEAD0;
   --footer: #252525;
   --footerText: #aaaaaa;
 }
@@ -48,6 +48,18 @@ a:hover {
   color: var(--accentDark);
   /* font-weight: 00; */
   border-bottom: 0.1rem solid var(--accentDark);
+  transition: all 0.4s;
+}
+
+.btn {
+  color: var(--textLight);
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+}
+
+.btn:hover {
   transition: all 0.4s;
 }
 
