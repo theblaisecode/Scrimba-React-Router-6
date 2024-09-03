@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Vans from "./pages/Vans/Vans";
+import VanInfo from "./pages/VanInfo/VanInfo";
 import logo from "./img/logo.png";
 import "./server";
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
+        <Route path="/vans/:id" element={<VanInfo />} />
       </Routes>
 
       <footer>
