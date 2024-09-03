@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import VansWrapper from "./VansWrapper";
+import { Link } from "react-router-dom";
 
 function Vans() {
   const [vans, setVans] = useState([]);
@@ -42,30 +43,32 @@ function Vans() {
 
             <div className="contentBottom">
               {vans.map((item) => {
-                const { id, imageUrl, name, price, type, description } = item;
+                const { id, imageUrl, name, price, type } = item;
                 return (
                   <div key={id} className="vanCard">
-                    <div className="cardTop">
-                      <img src={imageUrl} alt={name} />
-                    </div>
-
-                    <div className="cardBottom">
-                      <div className="head">
-                        <h4
-                          className="title"
-                          style={{ display: "inline-block" }}>
-                          {name}
-                        </h4>
-
-                        <p className="price">
-                          ${price}
-                          <br />
-                          <span className="highlight">/day</span>
-                        </p>
+                    <Link to={`/vans/${id}`} aria-label={`Link to ${name}`}>
+                      <div className="cardTop">
+                        <img src={imageUrl} alt={name} />
                       </div>
 
-                      <div className={`btn ${type} selected`}>{type}</div>
-                    </div>
+                      <div className="cardBottom">
+                        <div className="head">
+                          <h4
+                            className="title"
+                            style={{ display: "inline-block" }}>
+                            {name}
+                          </h4>
+
+                          <p className="price">
+                            ${price}
+                            <br />
+                            <span className="highlight">/day</span>
+                          </p>
+                        </div>
+
+                        <div className={`btn ${type} selected`}>{type}</div>
+                      </div>
+                    </Link>
                   </div>
                 );
               })}

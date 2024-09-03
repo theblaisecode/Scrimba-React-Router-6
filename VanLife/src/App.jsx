@@ -24,8 +24,13 @@ function App() {
             </div>
 
             <div className="pageNav">
-              <Link to="/about">About</Link>
-              <Link to="/vans">Vans</Link>
+              <Link to="/about" aria-label="Link to About Page">
+                About
+              </Link>
+
+              <Link to="/vans" aria-label="Link to Vans Page">
+                Vans
+              </Link>
             </div>
           </nav>
         </div>
@@ -41,7 +46,12 @@ function App() {
       <footer>
         <div className="container">
           <div className="footerContent">
-            <span>#VANLIFE &copy; {thisYear} | TheBlaiseCode</span>
+            <span>
+              #VANLIFE &copy; {thisYear} |{" "}
+              <a href="https://twitter.com/theblaisecode/" target="_blank">
+                TheBlaiseCode
+              </a>
+            </span>
           </div>
         </div>
       </footer>

@@ -101,3 +101,16 @@ footer {
   height: 100%;
   font-weight: 500;
 }
+
+.footerContent a {
+  color: var(--accent);
+  border-bottom: 0.1rem solid var(--accent);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.footerContent a:hover {
+  color: var(--accentPrimary);
+  border-bottom: 0.1rem solid var(--accentPrimary);
+  transition: all 0.4s;
+}
