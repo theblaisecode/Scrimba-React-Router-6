@@ -27,6 +27,26 @@ const VansWrapper = styled.div`
     width: 100%;
     border-radius: 1.5rem;
   }
+
+  .vanCard .cardBottom .head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  .cardBottom .head .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .cardBottom .head .price .highlight {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
 `;
 
 export default VansWrapper;

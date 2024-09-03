@@ -39,7 +39,7 @@ function App() {
       <footer>
         <div className="container">
           <div className="footerContent">
-            <span>VanLife &copy; {thisYear} | TheBlaiseCode</span>
+            <span>#VANLIFE &copy; {thisYear} | TheBlaiseCode</span>
           </div>
         </div>
       </footer>

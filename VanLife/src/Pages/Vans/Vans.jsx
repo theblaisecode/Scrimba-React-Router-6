@@ -50,8 +50,18 @@ function Vans() {
                     </div>
 
                     <div className="cardBottom">
-                      <h4 className="title">{name}</h4>
-                      <span className="price">{price}/day</span>
+                      <div className="head">
+                        <h4
+                          className="title"
+                          style={{ display: "inline-block" }}>
+                          {name}
+                        </h4>
+
+                        <span className="price">
+                          ${price}<br/><span className="highlight">/day</span>
+                        </span>
+                      </div>
+
                       <div className="btn tag">{type}</div>
                     </div>
                   </div>
