@@ -57,12 +57,14 @@ function Vans() {
                           {name}
                         </h4>
 
-                        <span className="price">
-                          ${price}<br/><span className="highlight">/day</span>
-                        </span>
+                        <p className="price">
+                          ${price}
+                          <br />
+                          <span className="highlight">/day</span>
+                        </p>
                       </div>
 
-                      <div className="btn tag">{type}</div>
+                      <div className={`btn ${type} selected`}>{type}</div>
                     </div>
                   </div>
                 );

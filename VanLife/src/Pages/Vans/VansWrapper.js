@@ -19,7 +19,7 @@ const VansWrapper = styled.div`
   .contentBottom {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    gap: 5rem;
     margin: 5rem 0;
   }
 
@@ -46,6 +46,42 @@ const VansWrapper = styled.div`
   .cardBottom .head .price .highlight {
     font-weight: 500;
     font-size: 1.5rem;
+  }
+
+  .vanCard .btn {
+    height: 3.4rem;
+    display: inline-block;
+    padding: 0.6rem 2.6rem;
+    font-weight: 500;
+    background: var(--selection);
+    color: var(--textLight);
+  }
+
+  .vanCard .btn:hover {
+    color: var(--selection);
+  }
+
+  .vanCard .btn:focus {
+    outline: none;
+  }
+
+  .vanCard .btn.selected {
+    color: var(--selection);
+  }
+
+  .vanCard .btn.simple:hover,
+  .vanCard .btn.simple.selected {
+    background: var(--btnOrange);
+  }
+
+  .vanCard .btn.rugged:hover,
+  .vanCard .btn.rugged.selected {
+    background: var(--btnGreen);
+  }
+
+  .vanCard .btn.luxury:hover,
+  .vanCard .btn.luxury.selected {
+    background: var(--textDark);
   }
 `;
 
