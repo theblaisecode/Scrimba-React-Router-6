@@ -39,8 +39,9 @@ const AboutWrapper = styled.div`
     background-color: var(--accent);
     color: var(--textDark);
     padding: 0 3.2rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 5.2rem;
     border-radius: 0.5rem;
+    margin-bottom: 5.5rem;
   }
 
   .about-page-cta h2 {
