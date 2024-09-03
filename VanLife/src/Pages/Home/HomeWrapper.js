@@ -5,7 +5,7 @@ const HomeWrapper = styled.div`
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
     url(${homeImg}) no-repeat center center/cover;
   background-size: cover;
-  min-height: 73rem;
+  min-height: 74.8rem;
   color: white;
   display: flex;
   justify-content: center;

@@ -38,7 +38,9 @@ function App() {
 
       <footer>
         <div className="container">
-          <span>VanLife &copy; {thisYear} | TheBlaiseCode</span>
+          <div className="footerContent">
+            <span>VanLife &copy; {thisYear} | TheBlaiseCode</span>
+          </div>
         </div>
       </footer>
     </BrowserRouter>

@@ -8,7 +8,7 @@
   --accentPrimary: #d36c22;
   --btnOrange: #e17654;
   --btnGreen: #115e59;
-  --selection: #FFEAD0;
+  --selection: #ffead0;
   --footer: #252525;
   --footerText: #aaaaaa;
 }
@@ -87,4 +87,17 @@ nav {
 
 .pageNav a {
   padding: 0.5rem;
+}
+footer {
+  background: var(--footer);
+  color: var(--footerText);
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  height: 100%;
+  font-weight: bold;
 }
