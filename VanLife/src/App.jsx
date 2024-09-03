@@ -6,6 +6,8 @@ import logo from "./img/logo.png";
 import "./server";
 
 function App() {
+  const thisYear = new Date().getFullYear();
+
   return (
     <BrowserRouter>
       <header>
@@ -33,6 +35,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
       </Routes>
+
+      <footer>
+        <div className="container">
+          <span>VanLife &copy; {thisYear} | TheBlaiseCode</span>
+        </div>
+      </footer>
     </BrowserRouter>
   );
 }
