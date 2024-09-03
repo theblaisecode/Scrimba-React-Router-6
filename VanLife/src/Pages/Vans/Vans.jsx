@@ -46,18 +46,20 @@ function Vans() {
                 const { id, imageUrl, name, price, type } = item;
                 return (
                   <div key={id} className="vanCard">
-                    <Link to={`/vans/${id}`} aria-label={`Link to ${name}`}>
+                    <Link
+                      to={`/vans/${id}`}
+                      aria-label={`View details for ${name},  priced at ${price} per day`}>
                       <div className="cardTop">
                         <img src={imageUrl} alt={name} />
                       </div>
 
                       <div className="cardBottom">
                         <div className="head">
-                          <h4
+                          <p
                             className="title"
                             style={{ display: "inline-block" }}>
                             {name}
-                          </h4>
+                          </p>
 
                           <p className="price">
                             ${price}

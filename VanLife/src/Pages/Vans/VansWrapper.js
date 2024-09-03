@@ -29,6 +29,7 @@ const VansWrapper = styled.div`
   }
 
   .vanCard .cardBottom .head {
+    padding-top: 1.5rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
