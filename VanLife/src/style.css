@@ -57,6 +57,7 @@ a:hover {
   padding: 0.7rem 1.5rem;
   border-radius: 0.5rem;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -88,6 +89,7 @@ nav {
 .pageNav a {
   padding: 0.5rem;
 }
+
 footer {
   background: var(--footer);
   color: var(--footerText);
