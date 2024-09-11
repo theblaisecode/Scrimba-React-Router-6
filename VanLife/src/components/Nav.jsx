@@ -16,6 +16,14 @@ function Nav() {
           </div>
 
           <div className="pageNav">
+            <Link to="/host" aria-label="Link to Host Page">
+              Host
+            </Link>
+            
+            <Link to="/" aria-label="Link to Home Page">
+              Home
+            </Link>
+            
             <Link to="/about" aria-label="Link to About Page">
               About
             </Link>
