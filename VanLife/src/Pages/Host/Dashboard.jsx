@@ -1,8 +1,11 @@
+import { Outlet } from "react-router";
+
 function Dashboard() {
   return (
-    <div>
+    <>
+      <Outlet />
       <h1>This is the Dashboard Page</h1>
-    </div>
+    </>
   );
 }
 

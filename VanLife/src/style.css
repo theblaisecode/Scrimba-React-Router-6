@@ -79,15 +79,23 @@ nav {
   width: 100%;
 }
 
-.pageNav {
+.pageNav,
+.innerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
 
-.pageNav a {
+.pageNav a,
+.innerNav a {
   padding: 0.5rem;
+}
+
+.innerNav {
+  justify-content: flex-start;
+  margin: 3rem 0;
+  width: 50%;
 }
 
 footer {
