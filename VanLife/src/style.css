@@ -47,7 +47,6 @@ a {
 a:hover,
 a.activeStyle {
   color: var(--accentDark);
-  /* font-weight: 00; */
   border-bottom: 0.1rem solid var(--accentDark);
   transition: all 0.4s;
 }
