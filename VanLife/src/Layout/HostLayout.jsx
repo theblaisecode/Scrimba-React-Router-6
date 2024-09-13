@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function HostLayout() {
   return (
     <div className="container">
-      <div className="innerNav">
-        <Link to="/host/dashboard" aria-label="Link to Host Page">
+      <nav className="innerNav">
+        <Link to="/host" aria-label="Link to Host Page">
           Dashboard
         </Link>
 
@@ -16,7 +16,7 @@ function HostLayout() {
         <Link to="/host/reviews" aria-label="Link to About Page">
           Reviews
         </Link>
-      </div>
+      </nav>
 
       <Outlet />
     </div>
