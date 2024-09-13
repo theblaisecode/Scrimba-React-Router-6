@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../img/logo.png";
 
 function Nav() {
@@ -16,21 +16,33 @@ function Nav() {
           </div>
 
           <div className="pageNav">
-            <Link to="/host" aria-label="Link to Host Page">
+            <NavLink
+              to="/host"
+              aria-label="Link to Host Page"
+              className={({ isActive }) => (isActive ? "activeStyle" : null)}>
               Host
-            </Link>
-            
-            <Link to="/" aria-label="Link to Home Page">
-              Home
-            </Link>
-            
-            <Link to="/about" aria-label="Link to About Page">
-              About
-            </Link>
+            </NavLink>
 
-            <Link to="/vans" aria-label="Link to Vans Page">
+            <NavLink
+              to="/"
+              aria-label="Link to Home Page"
+              className={({ isActive }) => (isActive ? "activeStyle" : null)}>
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/about"
+              aria-label="Link to About Page"
+              className={({ isActive }) => (isActive ? "activeStyle" : null)}>
+              About
+            </NavLink>
+
+            <NavLink
+              to="/vans"
+              aria-label="Link to Vans Page"
+              className={({ isActive }) => (isActive ? "activeStyle" : null)}>
               Vans
-            </Link>
+            </NavLink>
           </div>
         </nav>
       </div>
