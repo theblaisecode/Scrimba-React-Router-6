@@ -125,3 +125,46 @@ footer {
   border-bottom: 0.1rem solid var(--accentPrimary);
   transition: all 0.4s;
 }
+
+.host-van-link-wrapper {
+  color: unset;
+  text-decoration: unset;
+}
+
+.host-vans-list {
+  margin-bottom: 17rem;
+}
+
+.host-vans-list section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.host-vans-title {
+  padding-bottom: 2.6rem;
+}
+
+.host-van-single {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding-block: 1.8rem;
+  padding-left: 2.4rem;
+}
+
+.host-van-single > img {
+  height: 7rem;
+  border-radius: 0.5rem;
+  margin-right: 1.7rem;
+}
+
+.host-van-info h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-block: 1rem;
+}
+
+.host-van-info p {
+  margin-block: 1rem;
+}
