@@ -8,7 +8,8 @@ function HostLayout() {
         <NavLink
           to="/host"
           aria-label="Link to Host Page"
-          className={({ isActive }) => (isActive ? "activeStyle" : null)}>
+          className={({ isActive }) => (isActive ? "activeStyle" : null)}
+          end>
           Dashboard
         </NavLink>
 
@@ -17,6 +18,13 @@ function HostLayout() {
           aria-label="Link to Home Page"
           className={({ isActive }) => (isActive ? "activeStyle" : null)}>
           Income
+        </NavLink>
+
+        <NavLink
+          to="/host/vans"
+          aria-label="Link to Home Page"
+          className={({ isActive }) => (isActive ? "activeStyle" : null)}>
+          Vans
         </NavLink>
 
         <NavLink
