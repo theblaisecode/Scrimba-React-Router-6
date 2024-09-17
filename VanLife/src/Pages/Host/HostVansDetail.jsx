@@ -1,8 +1,27 @@
+import { useState, useEffect } from "react";
+import { useParams } from "react-router";
+
 function HostVansDetail() {
+  const { id } = useParams();
+  const [currentVan, setCurrentVan] = useState(null);
+
+  useEffect(() => {
+    fetch(`/api/host/vans/${id}`)
+      .then((res) => res.json())
+      .then((data) => setCurrentVan(data.vans));
+  }, []);
+
+  if (!currentVan) {
+    return <h1>Loading...</h1>;
+  }
+
   return (
-    <>
-      <h1>This is the HostVansDetail page</h1>
-    </>
+    <div>
+      <img src={currentVan.imageUrl} width={150} />
+      <h2>{currentVan.name}</h2>
+      <p>{currentVan.price}</p>
+      <p>{currentVan.type}</p>
+    </div>
   );
 }
 
