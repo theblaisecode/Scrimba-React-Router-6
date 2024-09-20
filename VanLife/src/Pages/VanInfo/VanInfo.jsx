@@ -26,9 +26,10 @@ function VanInfo() {
     <VanInfoWrapper>
       <div className="vanInfo">
         <div className="container">
-          <Link to="/vans" className="back">
-            Back to all vans
+          <Link to="?" className="back-button">
+            &larr; <span>Back to all vans</span>
           </Link>
+
           {vanInfo ? (
             <div className="vanInfoContent">
               <div className="contentTop">
