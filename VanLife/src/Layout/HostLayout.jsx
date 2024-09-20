@@ -14,21 +14,21 @@ function HostLayout() {
         </NavLink>
 
         <NavLink
-          to="/host/income"
+          to="income"
           aria-label="Link to Home Page"
           className={({ isActive }) => (isActive ? "activeStyle" : null)}>
           Income
         </NavLink>
 
         <NavLink
-          to="/host/vans"
+          to="vans"
           aria-label="Link to Home Page"
           className={({ isActive }) => (isActive ? "activeStyle" : null)}>
           Vans
         </NavLink>
 
         <NavLink
-          to="/host/reviews"
+          to="reviews"
           aria-label="Link to About Page"
           className={({ isActive }) => (isActive ? "activeStyle" : null)}>
           Reviews
