@@ -171,8 +171,7 @@ footer {
 
 .host-van-detail-layout-container {
   background-color: white;
-  padding: 24px;
-  margin: 30px 26px;
+  padding: 2.4rem;
 }
 
 .host-van-detail {
@@ -181,20 +180,20 @@ footer {
 }
 
 .host-van-detail > img {
-  height: 160px;
-  border-radius: 5px;
-  margin-right: 20px;
+  height: 16rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
 }
 
 .host-van-detail-info-text > h3 {
-  margin-top: 24px;
-  margin-bottom: 5px;
-  font-size: 26px;
+  margin-top: 2.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 .host-van-detail-info-text > h4 {
-  font-size: 20px;
+  font-size: 2rem;
   margin-block: 0;
 }
 
