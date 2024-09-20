@@ -197,3 +197,12 @@ footer {
   font-size: 20px;
   margin-block: 0;
 }
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.vanInfo .back-button {
+  margin-left: 6.5rem;
+}

@@ -18,10 +18,10 @@ function HostVansDetail() {
 
   return (
     <>
-      <Link to=".." className="back-button">
+      <Link to=".." relative="path" className="back-button">
         &larr; <span>Back to all vans</span>
       </Link>
-      
+
       <div>
         <img src={currentVan.imageUrl} width={150} />
         <h2>{currentVan.name}</h2>

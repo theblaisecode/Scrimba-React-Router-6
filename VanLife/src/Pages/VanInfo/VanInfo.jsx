@@ -26,7 +26,7 @@ function VanInfo() {
     <VanInfoWrapper>
       <div className="vanInfo">
         <div className="container">
-          <Link to="?" className="back-button">
+          <Link to=".." relative="path" className="back-button">
             &larr; <span>Back to all vans</span>
           </Link>
 
