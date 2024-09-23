@@ -36,7 +36,7 @@ function HostVansDetail() {
 
         <nav className="innerNav">
           <NavLink
-            to=""
+            to="."
             className={({ isActive }) => (isActive ? "activeStyle" : null)}
             end>
             Details
