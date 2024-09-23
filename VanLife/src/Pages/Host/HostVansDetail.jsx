@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router";
-import { Link } from "react-router-dom";
+import { Outlet, useParams } from "react-router";
+import { Link, NavLink } from "react-router-dom";
 
 function HostVansDetail() {
   const { id } = useParams();
@@ -33,7 +33,31 @@ function HostVansDetail() {
             <h4>${currentVan.price}/day</h4>
           </div>
         </div>
-        {/*Your changes will go here*/}
+
+        <nav className="innerNav">
+          <NavLink
+            to=""
+            className={({ isActive }) => (isActive ? "activeStyle" : null)}
+            end>
+            Details
+          </NavLink>
+
+          <NavLink
+            to="pricing"
+            className={({ isActive }) => (isActive ? "activeStyle" : null)}
+            end>
+            Pricing
+          </NavLink>
+
+          <NavLink
+            to="photos"
+            className={({ isActive }) => (isActive ? "activeStyle" : null)}
+            end>
+            Photos
+          </NavLink>
+        </nav>
+
+        <Outlet />
       </div>
     </>
   );
