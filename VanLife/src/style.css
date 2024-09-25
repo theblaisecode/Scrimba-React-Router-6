@@ -206,3 +206,23 @@ footer {
 .vanInfo .back-button {
   margin-left: 6.5rem;
 }
+
+.host-van-detail-layout-container .innerNav {
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
+.host-van-detail-info > h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.host-van-detail-info > h4 > span {
+  font-weight: 500;
+}
+
+.host-van-detail-image {
+  height: 20rem;
+  border-radius: 0.5rem;
+}
