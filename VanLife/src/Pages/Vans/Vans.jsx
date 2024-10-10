@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import VansWrapper from "./VansWrapper";
 import { Link } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+import VansWrapper from "./VansWrapper";
 
 function Vans() {
   const [vans, setVans] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   async function getVans() {
     try {
