@@ -7,6 +7,9 @@ function Vans() {
   const [vans, setVans] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
 
+  const typeFilter = searchParams.get("type");
+  console.log(typeFilter);
+
   async function getVans() {
     try {
       const res = await fetch("/api/vans");
