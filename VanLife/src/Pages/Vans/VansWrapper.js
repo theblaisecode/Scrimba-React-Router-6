@@ -19,6 +19,9 @@ const VansWrapper = styled.div`
   .vanFilter .vanTypes {
     background: var(--selection);
     color: var(--textDark);
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
   }
 
   .contentBottom {
