@@ -10,6 +10,19 @@ function Vans() {
   const typeFilter = searchParams.get("type");
   console.log(typeFilter);
 
+  const filteredVans = typeFilter
+    ? vans.filter((item) => item.type === typeFilter)
+    : vans;
+
+  // const filterItems = filteredVans.map((vanType) => {
+  //   const { id, type } = vanType;
+  //   return (
+  //     <div key={id} className="btn vanTypes">
+  //       {type}
+  //     </div>
+  //   );
+  // });
+
   async function getVans() {
     try {
       const res = await fetch("/api/vans");
@@ -34,20 +47,11 @@ function Vans() {
             <div className="contentTop">
               <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
 
-              <div className="vanFilter">
-                {vans.map((vanType) => {
-                  const { id, type } = vanType;
-                  return (
-                    <div key={id} className="btn vanTypes">
-                      {type}
-                    </div>
-                  );
-                })}
-              </div>
+              {/* <div className="vanFilter">{filterItems}</div> */}
             </div>
 
             <div className="contentBottom">
-              {vans.map((item) => {
+              {filteredVans.map((item) => {
                 const { id, imageUrl, name, price, type } = item;
                 return (
                   <div key={id} className="vanCard">
