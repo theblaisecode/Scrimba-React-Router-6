@@ -14,14 +14,14 @@ function Vans() {
     ? vans.filter((item) => item.type === typeFilter)
     : vans;
 
-  // const filterItems = filteredVans.map((vanType) => {
-  //   const { id, type } = vanType;
-  //   return (
-  //     <div key={id} className="btn vanTypes">
-  //       {type}
-  //     </div>
-  //   );
-  // });
+  const filterItems = filteredVans.map((vanType) => {
+    const { id, type } = vanType;
+    return (
+      <Link to={`?type=${type}`} key={id} className="btn vanTypes">
+        {type}
+      </Link>
+    );
+  });
 
   async function getVans() {
     try {
@@ -47,7 +47,7 @@ function Vans() {
             <div className="contentTop">
               <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
 
-              {/* <div className="vanFilter">{filterItems}</div> */}
+              <div className="vanFilter">{filterItems}</div>
             </div>
 
             <div className="contentBottom">
