@@ -5,10 +5,15 @@ const VansWrapper = styled.div`
     margin: 2rem 0;
   }
 
+  .filters,
+  .vanFilter {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
   .vanFilter {
     margin-top: 2rem;
-    display: flex;
-    gap: 1.2rem;
   }
 
   .vanFilter .vanTypes {

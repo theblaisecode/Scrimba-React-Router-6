@@ -126,6 +126,27 @@ footer {
   transition: all 0.4s;
 }
 
+a.clearFilters {
+  margin-left: -2rem;
+  height: 3.4rem;
+  padding: 0.6rem 2.6rem;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: underline;
+  background-color: transparent;
+  color: var(--footer);
+}
+
+a.clearFilters:hover,
+a.clearFilters.activeStyle {
+  color: var(--accentDark);
+  border-bottom: none;
+  transition: all 0.4s;
+  font-weight: 500;
+}
+
 .host-van-link-wrapper {
   color: unset;
   text-decoration: unset;

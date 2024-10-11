@@ -47,7 +47,16 @@ function Vans() {
             <div className="contentTop">
               <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
 
-              <div className="vanFilter">{filterItems}</div>
+              <div className="filters">
+                <div className="vanFilter">{filterItems} </div>
+                
+                <Link
+                  to="."
+                  className="clearFilters"
+                  style={{ marginTop: "2rem" }}>
+                  clear filters
+                </Link>
+              </div>
             </div>
 
             <div className="contentBottom">
