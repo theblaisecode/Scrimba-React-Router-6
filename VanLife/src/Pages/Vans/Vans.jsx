@@ -17,9 +17,12 @@ function Vans() {
   const filterItems = filteredVans.map((vanType) => {
     const { id, type } = vanType;
     return (
-      <Link to={`?type=${type}`} key={id} className="btn vanTypes">
+      <button
+        onClick={() => setSearchParams({ type: type })}
+        key={id}
+        className="btn vanTypes">
         {type}
-      </Link>
+      </button>
     );
   });
 
@@ -49,13 +52,13 @@ function Vans() {
 
               <div className="filters">
                 <div className="vanFilter">{filterItems} </div>
-                
-                <Link
-                  to="."
+
+                <button
+                  onClick={() => setSearchParams({})}
                   className="clearFilters"
                   style={{ marginTop: "2rem" }}>
                   clear filters
-                </Link>
+                </button>
               </div>
             </div>
 
